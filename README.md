@@ -5,7 +5,7 @@ This is a responsive Nike Shoe Store website built using React and Tailwind CSS.
 with an interactive user interface. It allows users to explore products and view detailed images. The website is fully responsive and optimized for various screen sizes.
 
 # 🌐 Live Demo
-Check out the live demo: <a src="https://nike-website-teal.vercel.app/" target='_blank'>https://nike-website-teal.vercel.app/</a>
+Check out the live demo: https://nike-website-teal.vercel.app/
 
 # 🚀 Features
 Responsive Design: Adapts to any screen size (desktop, tablet, mobile).<br>
