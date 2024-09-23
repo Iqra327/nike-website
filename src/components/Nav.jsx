@@ -1,7 +1,12 @@
 import { headerLogo } from '../assets/images';
 import { hamburger } from '../assets/icons';
 import { navLinks } from '../constants';
+import ExpandNav from './ExpandNav';
+import { useState } from 'react';
+
 const Nav = () => {
+  const [isExpand, setIsExpand] = useState(false);
+  
   return (
     <header className='padding-x py-8 absolute z-10 w-full'>
       <nav className='flex justify-between items-center max-container'>
@@ -27,14 +32,17 @@ const Nav = () => {
             ))
           }
         </ul>
-        <div className='hidden max-lg:block'>
-          <img 
-            src={hamburger}
-            alt='Hamburger'
-            width={25} 
-            height={25}
-          /> 
+        <div className='hidden max-lg:block cursor-pointer'>
+          <button onClick={() => setIsExpand(!isExpand)}>
+            <img 
+              src={hamburger}
+              alt='Hamburger'
+              width={25} 
+              height={25}
+            />
+          </button> 
         </div>
+        {isExpand ? <ExpandNav setIsExpand={setIsExpand}/> : ''}
       </nav>
     </header>
   )
