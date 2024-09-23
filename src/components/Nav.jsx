@@ -33,14 +33,13 @@ const Nav = () => {
           }
         </ul>
         <div className='hidden max-lg:block cursor-pointer'>
-          <button onClick={() => setIsExpand(!isExpand)}>
             <img 
               src={hamburger}
               alt='Hamburger'
               width={25} 
               height={25}
+              onClick={() => setIsExpand(!isExpand)}
             />
-          </button> 
         </div>
         {isExpand ? <ExpandNav setIsExpand={setIsExpand}/> : ''}
       </nav>
